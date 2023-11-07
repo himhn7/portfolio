@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#about {
+    text-align: center;
+    padding: 50px 0; /* Adjust the padding as needed */
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size of your profile image */
+    height: 150px;
+}
+
+.text {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links, you can change it */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.job-title {
+    font-family: 'Roboto', sans-serif; /* Use the name of the chosen font here */
+    font-weight: 400; /* You can adjust the font weight as needed */
+    font-size: 18px; /* You can adjust the font size as needed */
+}
+
+#portfolio {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    min-width: 50%;
+}
+
+
+.timeline {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 auto; /* Center the timeline on larger screens */
+    max-width: 800px; /* Set the maximum width for larger screens */
+}
+
+.project {
+    padding-left: 20px; /* Space between the timeline and the project content */
+    margin: 20px 0; /* Space between projects */
+    padding-left: 20px; /* Add left padding to mimic the bullet points */
+    position: relative;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.project p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        width: 100%; /* Use full screen width on mobile and tablet devices */
+        max-width: none; /* Remove maximum width */
+    }
+}
+
+#email-icon{
+    cursor: pointer;
+    color: #007bff;
+}

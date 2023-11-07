@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer" />
+    <title>Himanshu Nehra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="about">
+        <div class="about-container">
+            <div class="profile">
+                <img src="Cropped_Image.png" alt="Your Name" class="round-image">
+            </div>
+            <div class="text">
+                    <h2>Himanshu Nehra</h2>
+                    <h4 class="job-title">Software Engineer</h4>
+                    <p>
+                        <a href="https://twitter.com/him_nehra" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a> |
+                        <a href="https://www.linkedin.com/in/himanshu-nehra-4b9b74206/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a> |
+                        <a href="https://www.salesforceben.com/author/himanshu-nehra/" target="_blank"><i class="fa-solid fa-pen fa-lg"></i></a> |
+                        <a href="https://medium.com/@himanshunehra7" target="_blank"><i class="fa-solid fa-pen fa-lg"></i></a> |
+                        <i class="fa-solid fa-envelope fa-lg" id="email-icon"></i>
+                        <div id="email" style="display: none;">himanshunehra7@gmail.com</div>
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <ul class="timeline">
+            <li class="project">
+                <h3>Project Alphabet AI</h3>
+                <a href="http://projectalphabet.ai/">projectalphabet.ai</a>
+                <b><p>Solution Architect</p></b>
+                <p>Led the design and implementation for the product where we have built custom foundational large language models. Visit the Chat Labs section of the app to take the models for a spin</p>
+            </li>
+    
+            <li class="project">
+                <h3>Blaze Deploy</h3>
+                <a href="https://blazedeploy.com/">blazedeploy.com</a>
+                <b><p>Solution Architect</p></b>
+                <p>Led the design and implementation for the product. The product provides fastest metadata deployments between related and unrelated salesforce orgs , premium features include D-Day planner for complete deployment day solution so that no manual intervention is required and Metadata Analysis feature which provides graphical ways to understand the metadata relations and dependencies of a salesforce org.</p>
+            </li>
+    
+            <li class="project">
+                <h3>Growmentum</h3>
+                <a href="https://www.metrolinagreenhouses.com/">metrolinagreenhouses.com</a>
+                <b><p>Full Stack Developer</p></b>
+                <p>Worked on an Enterprise app for Metrolina Greenhouses which helps in managing multiple greenhouses , the app is responsible for managing thousands of hours of labour per week and is a major part of the greenhouse workflow.</p>
+            </li>
+
+            <li class="project">
+                <h3>Spectrum Reach</h3>
+                <a href="https://www.spectrumreach.com/">spectrumreach.com</a>
+                <b><p>Salesforce Developer</p></b>
+                <p>Worked on the salesforce implementation for Spectrum Reach. Spectrum Reach is the advertising wing of Charter Communications. Worked on multiple mission-critical custom tools inside salesforce and standard salesforce implementation</p>
+            </li>
+        </ul>
+    </section>
+    <script>
+        const emailIcon = document.getElementById('email-icon');
+        const emailText = document.getElementById('email');
+        let emailVisible = false;
+    
+        emailIcon.addEventListener('click', () => {
+            if (emailVisible) {
+                emailText.style.display = 'none'; // Hide the email text when clicked again
+            } else {
+                emailText.style.display = 'inline'; // Display the email text on the first click
+            }
+            emailVisible = !emailVisible; // Toggle the email visibility
+        });
+    </script>
+</body>
+</html>
